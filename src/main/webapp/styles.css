@@ -1,2 +1,48 @@
 @charset "UTF-8";
 
+body {
+  background: #f5fff0;
+  margin: 0px;
+}
+
+
+
+header, section, footer {
+  background: #fff;
+  padding: 5px;
+  margin: 0px 0px 5px 0px;
+}
+
+
+
+header {
+    display: flex;
+}
+
+nav {
+   margin-left: auto;
+}
+li {
+   margin-left: auto;
+
+  list-style-type: none;
+  display: inline-block;
+  background: #b6dcea; 
+  box-shadow: 1px 1px 1px 1px gray;
+  margin: 5px; 
+  width: 80px;
+  padding: 5px;
+  text-align: center;
+}
+
+
+
+.linkBox {
+  text-decoration-line: none;
+  color: purple;
+}
+
+footer {
+  text-align: center;
+}
+
