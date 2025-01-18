@@ -20,10 +20,10 @@ public class TodayServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html; charset=UTF-8;");
 		PrintWriter out = response.getWriter();
-		out.println("<html><body style='text-align:center'>");
-		out.println("<a href='index.html' style='color:#727D73; text-decoration:underline;'>메인화면</a>");
-		out.println("<h1>현재 시간</h1>");
-		out.println("<div style='background-color:#D0DDD0; width:300px; padding:20px; display:block; margin:0 auto;'>" + new Date() + "</div>");
+		out.println("<html><head><meta charset='UTF-8'><title>Clock</title><body style='text-align:center; margin-top:25px;'>");
+		out.println("<a href='index.html' style='color:#727D73; text-decoration:underline;'>Home</a>");
+		out.println("<h1>Current Time</h1>");
+		out.println("<div style='background-color:#D0DDD0; width:300px; padding:20px; display:block; margin:0 auto; border-radius:20px; box-shadow:2px 2px 5px rgba(0, 0, 0, 0.3);'>" + new Date() + "</div>");
         out.println("</body></html>");
 	}
 
