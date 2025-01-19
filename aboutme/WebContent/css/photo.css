@@ -1,0 +1,29 @@
+@charset "UTF-8";
+img {
+    border: 6px solid gray;
+    width: 240px;
+    height: 240px;
+}
+.main {
+    text-align: left;
+    padding: 20px 200px;
+}
+.main_div {
+    overflow: auto;
+    margin: 20px 0px;
+}
+.main_section {
+    display: inline;
+    
+}
+.main_section > section {
+    float: left;
+}
+.main_text {
+    position: relative;
+    top: 75px;
+    left: 5%;
+}
+p {
+    line-height: 1.8;
+}
