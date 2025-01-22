@@ -1,48 +1,115 @@
 @charset "UTF-8";
 
+
+
 body {
-  background: #f5fff0;
+  background: #ecf0ee;
   margin: 0px;
 }
 
 
 
-header, section, footer {
+header, main, footer {
   background: #fff;
   padding: 5px;
-  margin: 0px 0px 5px 0px;
+  margin: 0px 0px 10px 0px; 
 }
 
-
-
 header {
-    display: flex;
+  display: flex;
 }
 
 nav {
-   margin-left: auto;
+  margin-left: auto;
 }
+
 li {
-   margin-left: auto;
+  margin-left: auto;
 
   list-style-type: none;
   display: inline-block;
-  background: #b6dcea; 
+  background: #8cbbc6; 
   box-shadow: 1px 1px 1px 1px gray;
-  margin: 5px; 
+  margin: 5px;
+  
   width: 80px;
   padding: 5px;
+  
   text-align: center;
 }
-
-
 
 .linkBox {
   text-decoration-line: none;
   color: purple;
+  display: block;
 }
 
 footer {
   text-align: center;
+  color: #8cbbc6;
+}
+
+
+ section {
+  padding: 10px 5px;
+}
+
+
+/* index.html */
+.index-block {
+  text-align: center;
+}
+
+.index-block > img {
+  width: 70%;
+}
+
+.index-block li {
+  width: 100px;
+  height: 100px; 
+  line-height: 100px;
+  box-shadow: 1px 0px 1px gray;
+  
+}
+
+.index-block .linkBox {
+  color: white;
+}
+
+
+/* aboutme */
+.aboutme-block {
+  padding: 10px 10%;
+}
+.aboutme-block h2 {
+  margin: 0px;
+}
+.aboutme-block div {
+  margin-bottom: 5px;
+}
+
+/* photo */
+.photo-block {
+  padding: 10px 20px;
+}
+
+.img-container {
+  padding: 10px 30px;
+  margin: 25px 0px;
+  overflow: auto;
+}
+
+.img-container > img {
+  float: left;
+  width: 25%;
+  min-width: 200px;
+  margin-right: 10px;
+  border: solid 5px gray;
+}
+
+.img-container > div {
+  float: left;
+  width: 60%;
+  padding: 5px 20px;
 }
 

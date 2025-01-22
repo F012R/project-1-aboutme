@@ -2,6 +2,7 @@ package exam;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 import javax.servlet.ServletException;
@@ -35,25 +36,18 @@ public class TodayServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		out.println("<html>");
 		out.println("<head><title>title</title></head>");
+		out.println("<link rel=\"stylesheet\" href=\"./today_style.css\"></head>");
 		out.println("<body>");
 	
 		Calendar c = Calendar.getInstance();
-
-		int year = c.get(Calendar.YEAR);
-		int month = c.get(Calendar.MONTH) +1;
-		int date = c.get(Calendar.DAY_OF_MONTH);
-		int hour = c.get(Calendar.HOUR_OF_DAY);
-		int min = c.get(Calendar.MINUTE);
-		int sec = c.get(Calendar.SECOND);
+		
+		SimpleDateFormat format = new SimpleDateFormat();
+		format.applyPattern("yyyy/M/d HH:mm");
+		String timeStr = format.format(c.getTime());
 		
 		out.println("<a href=\"index.html\">메인화면</a>");
  
-		StringBuilder sb = new StringBuilder();
-		sb.append("현재시간: ");
-		sb.append(year).append("/").append(month).append("/").append(date).append(" ");
-		sb.append(hour).append(":").append(min);
-		
-		out.println("<h1 class=\"time\">"+sb+"</h1>");
+		out.println("<h1 class=\"time\">현재 시간 : "+timeStr+"</h1>");
 		 
 		out.println("</body>");
 		out.println("</html>");	}
